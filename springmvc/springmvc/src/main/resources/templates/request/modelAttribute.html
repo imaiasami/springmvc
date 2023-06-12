@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title> ModelAttribute </title>
+</head>
+<body>
+
+<h2> [ ]Handler Method - @ModelAttribute ]</h2>
+<p><a href = "/"> 메인으로 </a></p>
+
+<ol>
+		<li> 데이터 보내기 (파라미터) : <a href = "/model/memberModel?id=userA">파라미터 보내기</a></li>
+		<li> 데이터 보내기 (파라미터, 모델 name 미지정) : <a href = "/model/memberModelV1?id=userA&name=테스트유저">파라미터 보내기</a></li>
+		<li> 데이터 보내기 (파라미터, 모델 name 지정) : <a href = "/model/memberModelV2?id=userA&name=테스트유저">파라미터 보내기</a></li>
+		<li> 데이터 읽기 (세션) : <a href = "/model/sessionRead">세션 읽기</a></li>
+		<li> 세션 삭제 : <a href = "/model/sessionClear">세션 삭제</a></li>
+</ol>
+뷰 - 모델에서 데이터 읽기 :
+<p th:text="'member : ' + ${member}"></p>
+<p th:text="'memberInfo : ' + ${memberInfo}"></p>
+<p th:text="'sessionValue : ' + ${session.sessionValue}"></p>
+<p th:text="'sessionModel : ' + ${session.member}"></p>
+</body>
+</html>

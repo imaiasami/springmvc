@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<p><a href = "/"> 메인으로 </a>
+	<h2>[Request Mapping]</h2>
+	<ol>
+		<li>요청 보내기(GET 방식 1) : <a href="requestGet">Get 방식 요청</a></li>
+		<li>요청 보내기(GET 방식 2) : <a href="requestGetMapping">Get 방식 요청</a></li>
+		<li>요청 보내기(POST 방식 1) :
+			<form action="requestPost" method="post">
+				<input type="hidden" name="name" value="Yoo"> <input
+					type="submit" value="전송하기">
+			</form>
+		<li>요청 보내기(POST 방식 2) :
+			<form action="requestPostMapping" method="post">
+				<input type="hidden" name="name" value="Yoo"> <input
+					type="submit" value="전송하기">
+			</form>
+		<li>요청 보내기(GET or POST 방식) :
+			<form action="requestAll" method="post">
+				<input type="hidden" name="name" value="Yoo"> <input
+					type="submit" value="전송하기">
+			</form>
+	</ol>
+
+</body>
+</html>

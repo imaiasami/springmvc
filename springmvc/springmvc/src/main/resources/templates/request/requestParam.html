@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h2>Handler Method - @RequestParam</h2>
+<p><a href = "/"> 메인으로 </a>
+
+<ol>
+	<li> 데이터 보내기 (파라미터 지정): <a href = "/request/paramTest?id=userA&name=테스트 유저"> 파라미터 보내기 </a></li>
+	<li> 데이터 보내기 (파라미터 누락) : <a href = "/request/paramTestNull"> 파라미터 보내기 </a></li>
+	<li> 데이터 보내기 (파라미터 미지정) : <a href = "/request/paramTestMap?id=userA&name=테스트 유저"> 파라미터  보내기 </a></li>
+	<li> 데이터 보내기 (어노테이션 지정) : <a href = "/request/paramTestNoAnno?id=userA&name=테스트 유저"> 파라미터  보내기 </a></li>
+</ol>
+
+</body>
+</html>
